@@ -7,7 +7,7 @@ Width: composed of the third and fourth bytes (bytes[2] and bytes[3]).
 Height: composed of the fifth and sixth bytes (bytes[4] and bytes[5]).
 Each value is formed by concatenating two bytes, where the first byte is the low-order part and the second is the high-order part.
 ```
-In this way, each tile from the file is read byte by byte.
+In this way, each tile from the file is read byte by byte. i >= 6
 ```csharp
 Convert.ToBoolean(bytes[i]), // isWall
     Convert.ToBoolean(bytes[i + 1]), // isTorch
